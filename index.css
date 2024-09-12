@@ -118,6 +118,7 @@
 .why_gelato{
   display: flex;
   grid-template-columns:1fr 1fr ;
+  margin-bottom: 100px;
 }
 .why_gelato-cont-left,.why_gelato-cont-right{
   flex:1
@@ -126,6 +127,42 @@
   display: flex;
   justify-content: flex-start; /* Align image to the left */
   align-items: center;
+}
+.demand_sellng{
+  display: flex;
+  grid-template-columns:1fr 1fr ;
+
+}
+.demand_sellng-cont-left,.demand_sellng-cont-right{
+  flex:1;
+}
+
+
+.demand_sellng-cont-right{
+  display: flex;
+  justify-content: flex-start; /* Align image to the left */
+  align-items: center;
+  width:600px;
+
+}
+/* Ensure the floating text is positioned relative to the viewport */
+.floating-text {
+  position: fixed;
+  top: 760px; /* Adjust vertical position from the top */
+  right: 20px; /* Adjust horizontal position from the right */
+  background-color: black; /* Semi-transparent background */
+  color: white; /* Text color */
+  padding-left: 12px;
+  padding-right:  22px; /* Padding around the text */
+  border-radius: 70px; /* Rounded corners */
+  font-size: 16px; /* Font size */
+  z-index: 1000; /* Ensure it stays above other content */
+  display: flex;
+  align-items: center;
+  border-radius: 30px;
+}
+.floating-text:hover{
+color: rgb(165, 165, 165);
 }
 
 

@@ -1,99 +1,131 @@
+/* Header Styles */
 .header {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    border: 5px solid black;
-  }
+  display: flex;
   
-  .logo {
-    margin: 10px;
-    width: 200px;
-  }
-  
-  .nav-items {
-    padding-left: 20px;
-  }
-  
-  .nav-items > ul {
-    font-size: 20px;
-    display: flex;
-    list-style-type: none;
-  }
-  
-  .nav-items > ul > li {
-    padding: 20px;
-    margin: 10px;
-  }
-  
-  .cart {
-    width: 25px;
-  }
-  
-  .restaurantContainer {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin: 0 auto;
-  }
-  
-  .restaurantCard {
-    margin: 10px;
-    padding: 5px;
-    width: 200px;
-    height: 400px;
-    background-color: #eeeaea;
-    transition: border 0.3s ease;
-  }
-  
-  .restaurantCard:hover {
-    border: 5px solid #000;
-    cursor: pointer;
-  }
-  
-  .search {
-    padding: 10px;
-  }
-  
-  .res-logo {
-    width: 200px;
-    height: 150px;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+  /* justify-content: space-between; */
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 20px;
+  border-bottom: 5px solid #918c8c;
+  width: 100%;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  position: relative;
+  z-index: 1000;
+  overflow:auto;
+  font-family: Helvetica;
+  font-size: 22px;
+}
+/* Logo Styles */
+.logo-container {
+  display: flex;
+  align-items: center;
+}
 
-  .rating-dropdown{
-    width:150px;
-    height:23px;
-    background-color: #c3c0c0;
-  }
+.logo {
+  width: 150px;
+  height: auto;
+}
 
-  .shimmer-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* Center align shimmer lines */
-  }
-  
-  .shimmer-line {
-    margin: 10px;
-    width: 200px;
-    height: 400px;
-    background-color: #ded9d9; /* Lighter background color */
-    animation: shimmer 1.5s infinite; /* Add shimmer animation */
-  }
-  
-  @keyframes shimmer {
-    0% {
-      background-position: -200px 0;
-    }
-    100% {
-      background-position: 200px 0;
-    }
-  }
-  .LogIn{
-    width:70px;
-    height:50px;
-  }
-  
+/* Navigation Items */
+.nav-items {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+
+.nav-items ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 20px;
+}
+
+.nav-items ul li {
+  margin: 0;
+}
+.nav-items li {
+   /* Light gray background */
+  padding: 5px 10px; /* Add padding */
+  border-radius: 5px; /* Add border radius for rounded corners */
+  transition: background-color 0.3s; /* Enable hover effect */
+  margin: 0 5px; /* Add margin between elements */
+}
+
+.nav-items li:hover {
+  background-color: #cccccc;
+  border-radius: 20px;
+  cursor: pointer; /* Change background color on hover */
+}
+
+.nav-items a {
+  color: black; /* Text color */
+  font-size: 14px;
+}
+
+.nav-items a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.nav-items a:hover {
+  color: #007bff;
+}
+
+.top_container{
+  display: flex;
+  grid-template-columns:1fr 1fr ;
+}
+.top-cont-left,.top-cont-right{
+  flex:1
+}
+
+.see_our_prod_btn{
+  border: solid black;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 50px;
+}
+.top-cont-right{
+  display: flex;
+  justify-content: flex-start; /* Align image to the left */
+  align-items: center;
+}
+
+.product_details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; /* Adjust padding as needed */
+  margin-right: 220px;
+  margin-left: 220px;
+  font-family: sans-serif; /* Replace with your desired font */
+  font-weight: lighter; /* Set the font weight for the entire component */
+}
+
+.flex1, .flex2, .flex3 {
+  text-align: center;
+  font-size: 25px; /* Adjust font size as needed */
+  line-height: 1.2; /* Adjust line height for spacing */
+  letter-spacing: 1px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.why_gelato{
+  display: flex;
+  grid-template-columns:1fr 1fr ;
+}
+.why_gelato-cont-left,.why_gelato-cont-right{
+  flex:1
+}
+.why_gelato-cont-right{
+  display: flex;
+  justify-content: flex-start; /* Align image to the left */
+  align-items: center;
+}
+
+

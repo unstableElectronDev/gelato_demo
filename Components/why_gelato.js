@@ -23,7 +23,7 @@ const WhyGelato=()=>{
           
             </div>
       
-    </div>
+        </div>
     )
 }
 export default WhyGelato;

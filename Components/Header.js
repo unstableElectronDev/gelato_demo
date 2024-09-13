@@ -27,7 +27,7 @@ const Header = () => {
         <li style={{ display: 'flex', alignItems: 'center' }}>
         <img 
               src={web_image} 
-              style={{ width: '37px', height: '37px', marginRight: '5px' }} 
+              style={{ width: '40px', height: '30px', marginRight: '5px' }} 
             />
             IN/INR
         </li>
